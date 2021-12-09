@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-default {
+  background: #edeef0;
+}
+
+.btn-icon {
+  border: none;
+  outline: none;
+  padding: 1px;
+  margin: 0.5px;
+  background-color: transparent;
+}
+
+.icon-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 42px;
+  padding: 1px 15px;
+}
+
+.icon-form > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-form > input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.icon-form > input:focus {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.layout-container {
+  width: 1040px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.dropdown {
+  position: relative;
+  height: 30px;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 30px;
+  width: 160px;
+  right: 0;
+  background: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-content > .item {
+  text-align: left;
+  width: 100%;
+}
+
+.page-content {
+  width: 65%;
+}
+
+.edit-panel {
+  width: 35%;
+  padding: 1rem;
+}
+
+.edit-panel-form {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 243px;
+  border-bottom: 0.4px solid #b8b8b8;
+  background-color: transparent;
+}
+
+.edit-panel-form > input,
+.edit-panel-form > i {
+  padding: 1rem 0.5rem;
+}
+
+.edit-panel-form > input {
+  border: none;
+  outline: none;
+}

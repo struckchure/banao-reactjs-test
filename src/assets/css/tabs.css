@@ -1,0 +1,54 @@
+.tab-btn-group,
+.tab-extra-content {
+  display: flex;
+  width: 100%;
+}
+
+.tab-btn-group {
+  justify-content: flex-start;
+}
+
+.tab-extra-content {
+  justify-content: flex-end;
+}
+
+.tab-btn {
+  background-color: transparent;
+  font-size: 16px;
+  color: #8a8a8a;
+  transition: 0.5s;
+  padding: 0 0.5rem;
+}
+
+.tab-active,
+.tab-btn:hover {
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  font-weight: 400;
+}
+
+.tab-toolbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-content {
+  padding: 1rem;
+}
+
+.tab-view {
+  opacity: 0;
+  display: none;
+}
+
+.tab-show {
+  animation: animate_tab_view 0.5s forwards;
+  display: block;
+}
+
+@keyframes animate_tab_view {
+  to {
+    opacity: 1;
+  }
+}

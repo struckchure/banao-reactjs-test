@@ -1,0 +1,21 @@
+.text-white {
+  color: #fff;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

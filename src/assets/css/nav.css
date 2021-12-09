@@ -1,0 +1,53 @@
+/* navbar */
+
+.navbar {
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.icon-form {
+  width: 360px;
+  background: #f2f2f2;
+  border-radius: 21px;
+}
+
+.icon-form {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+}
+
+i {
+  color: #5c5c5c;
+}
+
+.auth.content > label {
+  font-weight: bold;
+}
+
+/* navbar */
+
+/* intro content */
+
+.intro {
+  width: 100%;
+  height: 440px;
+  background: url("@/assets/img/intro-image.svg");
+  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.intro-content {
+  position: absolute;
+  top: 358px;
+  left: 200px;
+}
+
+.intro-content > h3 {
+  font-weight: 900;
+}
+
+/* intro content */
