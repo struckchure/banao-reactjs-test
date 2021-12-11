@@ -63,10 +63,14 @@ img {
 }
 
 .edit-panel-form {
-  border-bottom: 0.4px solid #b8b8b8;
-  background-color: transparent !important;
   width: 243px !important;
   border-radius: 0 !important;
+}
+
+.edit-panel-form > .form-control {
+  background-color: transparent !important;
+  border: 0;
+  border-bottom: 0.4px solid #b8b8b8;
 }
 
 .edit-panel-info {
@@ -120,10 +124,21 @@ img {
 .icon-form > i {
   position: absolute;
   top: 35%;
-  right: 5%;
   display: grid;
   place-items: center;
   place-content: center;
+}
+
+.icon-form > i:first-child {
+  right: 5%;
+}
+
+.icon-form > i:last-child {
+  left: 5%;
+}
+
+.icon-lr > .form-control {
+  padding-left: 3rem;
 }
 
 .btn-outline-white {

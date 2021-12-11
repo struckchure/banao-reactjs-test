@@ -72,9 +72,13 @@ const tabContent = (is_authenticated) => {
       <div className="edit-panel">
         <section className="sticky top-0">
           <form>
-            <div className="icon-form edit-panel-form">
+            <div className="icon-form icon-lr edit-panel-form bg-transparent">
               <i className="icon point"></i>
-              <input type="text" value={"Noida, India"} />
+              <input
+                type="text"
+                className="form-control"
+                value={"Noida, India"}
+              />
               <i className="icon pencil"></i>
             </div>
           </form>
