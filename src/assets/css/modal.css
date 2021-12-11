@@ -1,5 +1,5 @@
 .custom-modal {
-  position: fixed;
+  position: absolute;
   top: -200%;
   left: 0;
   width: 100%;
@@ -9,22 +9,25 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 40;
   opacity: 0;
   overflow: auto;
+  z-index: 40;
 }
 
 .custom-modal-content {
-  position: relative;
   width: 60%;
-  height: auto;
+  height: 70vh;
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+  place-content: center;
 }
 
 .close-btn {
   position: absolute;
   right: 220px;
-  top: -8%;
-  right: 10%;
+  top: 5%;
+  right: 20%;
   border-radius: 100%;
   width: 30px;
   height: 30px;
@@ -60,10 +63,28 @@
 
   .custom-modal-content {
     width: 100% !important;
+    padding: 0;
+  }
+
+  .close-btn {
+    top: 35%;
+    right: 5%;
   }
 }
 
 /* Medium (md) */
-@media (min-width: 768px) {
-  /* ... */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .custom-modal {
+    align-items: flex-end;
+  }
+
+  .custom-modal-content {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .close-btn {
+    top: 30%;
+    right: 10%;
+  }
 }

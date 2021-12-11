@@ -129,16 +129,18 @@ img {
   place-content: center;
 }
 
-.icon-form > i:first-child {
+.icon-r {
   right: 5%;
 }
 
-.icon-form > i:last-child {
+.icon-l {
   left: 5%;
 }
 
+.icon-r > .form-control,
+.icon-l > .form-control,
 .icon-lr > .form-control {
-  padding-left: 3rem;
+  padding: 0 3rem;
 }
 
 .btn-outline-white {

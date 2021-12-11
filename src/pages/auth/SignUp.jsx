@@ -43,7 +43,7 @@ export default function SignUp() {
                   className="form-control rounded-none"
                   placeholder="Password"
                 />
-                <i className="icon eye cursor-pointer"></i>
+                <i className="icon eye cursor-pointer icon-r"></i>
               </div>
               <input
                 type="password"

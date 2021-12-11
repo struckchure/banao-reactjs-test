@@ -15,6 +15,16 @@ export default function Nav({ is_authenticated }) {
 
   return (
     <>
+      {/* auth pages modal */}
+
+      <Modal show={show_sign_in} set_show={set_show_sign_in}>
+        <SignIn />
+      </Modal>
+
+      <Modal show={show_sign_up} set_show={set_show_sign_up}>
+        <SignUp />
+      </Modal>
+
       <nav className="mobile-navbar">
         <div className="container mobile-navbar-content px-10 py-2">
           <button className="btn-icon">
@@ -103,15 +113,6 @@ export default function Nav({ is_authenticated }) {
             </label>
           </div>
         </div>
-        {/* auth pages modal */}
-
-        <Modal show={show_sign_in} set_show={set_show_sign_in}>
-          <SignIn />
-        </Modal>
-
-        <Modal show={show_sign_up} set_show={set_show_sign_up}>
-          <SignUp />
-        </Modal>
       </nav>
     </>
   );
