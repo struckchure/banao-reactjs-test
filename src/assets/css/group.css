@@ -1,0 +1,20 @@
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.group-name {
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #000;
+}
+
+.follow-btn {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 12px;
+}

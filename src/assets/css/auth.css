@@ -1,0 +1,138 @@
+.auth-layout {
+  width: 736px;
+  background: #fff;
+  border-radius: 8px;
+}
+.auth-layout::-webkit-scrollbar {
+  display: none;
+}
+
+.auth-header {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background: #effff4;
+  font-size: 14px;
+  font-weight: 400;
+  color: #008a45;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+.auth-content {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.auth-content > div {
+  width: 350px;
+  height: 100%;
+}
+.auth-content > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.auth-form-title {
+  font-weight: bold;
+  display: block;
+}
+
+.auth-form {
+  height: 100%;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+input.form-control {
+  background: #f7f8fa;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+input.form-control,
+.icon-form,
+.auth-form-button {
+  max-width: 320px;
+  height: 46px;
+}
+
+.d-flex > .form-control {
+  width: 47.65% !important;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+}
+
+.auth-form-button[type="submit"] {
+  margin: 2rem 0;
+}
+
+.auth-form-button {
+  width: 100%;
+  height: 40px;
+  margin: 0.5rem 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.auth-form-button.outline {
+  border: 0.6px solid #d9d9db;
+}
+
+.auth-info {
+  font-size: 13px;
+  text-align: right;
+}
+
+/* Small (sm) */
+@media (max-width: 640px) {
+  .auth-layout {
+    width: 100%;
+    height: 80vh;
+    overflow: auto;
+  }
+  .auth-layout::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .auth-content {
+    justify-content: center;
+  }
+
+  .auth-content > div:last-child {
+    display: none;
+  }
+
+  .d-flex > .form-control {
+    width: 45.65% !important;
+  }
+}
+
+/* Medium (md) */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .auth-layout {
+    width: 100%;
+    /* height: 80vh; */
+    /* overflow: auto; */
+  }
+  .auth-layout::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .auth-content {
+    justify-content: center;
+  }
+
+  .auth-content > div:last-child {
+    display: none;
+  }
+
+  .d-flex > .form-control {
+    width: 45.65% !important;
+  }
+}

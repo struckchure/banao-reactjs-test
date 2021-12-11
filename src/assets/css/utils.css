@@ -19,3 +19,70 @@
 .bg-transparent {
   background-color: transparent;
 }
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.border-gray {
+  border-color: gray;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.invert {
+  background-color: #333;
+  color: #fff;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.mt-10 {
+  margin-top: 5rem;
+}
+
+/* trbl */
+
+.rounded-none {
+  border-radius: none !important;
+}
+
+.rounded-t-none {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.rounded-b-none {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.rounded-l-none {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

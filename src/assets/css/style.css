@@ -25,33 +25,8 @@ img {
   background-color: transparent;
 }
 
-.icon-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 42px;
-  padding: 1px 15px;
-}
-
-.icon-form > i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-form > input {
-  border: none;
-  background-color: transparent;
-  width: 100%;
-}
-
-.icon-form > input:focus {
-  background-color: transparent;
-  box-shadow: none;
-}
-
 .layout-container {
-  width: 1040px;
+  width: 100%;
   margin: auto;
   padding: 2rem;
 }
@@ -59,6 +34,7 @@ img {
 .dropdown {
   position: relative;
   height: 30px;
+  z-index: 40;
 }
 
 .dropdown-content {
@@ -78,31 +54,121 @@ img {
 }
 
 .page-content {
-  width: 65%;
+  width: 692px;
 }
 
 .edit-panel {
-  width: 35%;
-  padding: 1rem;
+  width: 30%;
+  padding: 1rem 0;
 }
 
 .edit-panel-form {
-  float: right;
+  border-bottom: 0.4px solid #b8b8b8;
+  background-color: transparent !important;
+  width: 243px !important;
+  border-radius: 0 !important;
+}
+
+.edit-panel-info {
+  padding: 3rem 0;
+  color: #000000;
+}
+
+.edit-panel-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 243px;
-  border-bottom: 0.4px solid #b8b8b8;
-  background-color: transparent;
+  opacity: 0.5;
 }
 
-.edit-panel-form > input,
-.edit-panel-form > i {
-  padding: 1rem 0.5rem;
+.edit-panel-info p {
+  line-height: 15px;
+  font-size: 12px;
 }
 
-.edit-panel-form > input {
-  border: none;
-  outline: none;
+.toolbar-btn {
+  margin: 1rem 0.5rem;
+}
+
+.toolbar-btn i {
+  display: inline;
+  margin: 0 0.4rem;
+}
+
+.auth-btn {
+  border-color: gray;
+  color: gray;
+}
+
+.auth-btn:hover {
+  border-color: gray;
+  color: gray;
+  background-color: rgba(22, 8, 8, 0.1);
+}
+
+.copy-text {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.icon-form {
+  position: relative;
+  background: #f7f8fa;
+  display: block;
+}
+
+.icon-form > i {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.btn-outline-white {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: white;
+  color: white;
+}
+
+.btn-outline-white:focus {
+  box-shadow: none !important;
+}
+
+/* Small (sm) */
+@media (max-width: 640px) {
+  .edit-panel {
+    display: none;
+  }
+
+  .layout-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .page-content {
+    width: 100%;
+  }
+}
+
+/* Medium (md) */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .edit-panel {
+    display: none;
+  }
+
+  .layout-container {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .page-content {
+    width: 100%;
+  }
 }

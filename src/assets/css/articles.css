@@ -83,3 +83,31 @@
   text-align: left;
   margin: 0 1rem;
 }
+
+/* Small (sm) */
+@media (max-width: 640px) {
+  .article {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+    border-radius: 0;
+  }
+
+  .article-image {
+    height: 100%;
+  }
+}
+
+/* Medium (md) */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .article {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+    border-radius: 0;
+  }
+
+  .article-image {
+    height: 100%;
+  }
+}
